@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--展会信息详情-->
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/menu.css"/>
+<title></title>
+<style>
+    <!---fbf1f0-->
+body {
+    margin: 0;
+    background-color:#fbf1f0;
+    
+}
+
+<!--menu-->
+#top1{
+
+    float:top;
+
+}
+#top2{
+    height: 35px;
+    float:top;
+	background-color: #fbf1f0;
+	padding-left:50px ;
+	font-size: 25px;
+	border-bottom:5px solid pink ;
+
+}
+#main{
+    width: 100%;
+    height: 70%;
+    
+}
+.photo{
+    width: 45%;
+    border: 5px  solid pink;
+    float: left;
+}
+.photo2{
+    width: 40%;
+    padding: 70px;
+    float: right;
+}
+#field{
+    padding-bottom: 100px;
+}
+#top3{
+    background-color: #fbf1f0;
+    color: #fbf1f0;
+    float: bottom;
+}
+#word2{
+    letter-spacing:10px;
+}
+</style>
+</head>
+<body>
+<div id="top1" >
+    <ul class="menu">
+        <li><a href="index.html"><img src="../image/title.png" width="100" height="50"></a></li>
+        <li><a href="chooseCourse.html">选课中心</a></li>
+        <li><a href="ArtView.html">作品赏析</a></li>
+        <li><a href="information.html">展会信息</a></li>
+        <li><img src="../image/search2.png" width="230" height="60"></li>
+        <li><a href="personalCenter.html">    个人中心    </a></li>
+        <li><a href="login.html"><img src="../image/touxiang.png" width=50"></a></li>
+    </ul>
+</div>
+<div id="top2">
+    <a href="index.html">首页</a>><a href="login.html">登录</a>
+</div>
+<div id="main">
+    <div class="photo">
+        <img id="myimage" src="../image/f1.png" width="600">
+    </div>
+    
+    <div class="photo2">
+        <h2>登录</h2>
+        用户名   <input type="text" id="field1"  onclick="change2()" style="width: 300px; height: 60px;"><br><p></p>
+       <p id="word2">密码<input type="password" id="field2"  onclick="change1()"style="width: 300px; height: 60px;"><br></p>
+        <a href="index.html"><button style="width: 150px; height: 60px; background-color: pink;">登录</button></a>
+        <input type="button" onclick="change3()" style="width: 150px; height: 60px; " value="注册" />
+
+    </div>
+    <div id="top3">
+
+    </div>
+</div>
+    
+
+    <script>
+        /*<div class="photo2">
+        <h2>登录</h2>
+        用户名: <input type="text" id="field1" value="Hello World!"><br>
+        密码: <input type="text" id="field2" onkeypress="change()"><br><br>
+    </div>*/
+        function change1(){
+            document.getElementById('myimage').src = "../image/f2.png";
+        }
+        function change2(){
+            document.getElementById('myimage').src = "../image/f1.png";
+        }
+        function change3(){
+            alert("相关功能开发中，敬请期待")
+        }
+    </script>
+</body>
+</html>

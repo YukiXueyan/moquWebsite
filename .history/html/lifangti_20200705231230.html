@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立方体旋转</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+
+        body{
+            background-color: white;
+        }
+        .cube{
+            width:200px;
+            height:200px;
+            margin: 150px auto;
+            transform-style: preserve-3d;
+            animation: swap infinite 20s linear 2s;
+        }
+
+        .cube > div{
+            width: 200px;
+            height: 200px;
+            opacity: .8;
+            position: absolute;
+            transform-style: preserve-3d;
+            perspective: 400px;
+        }
+
+        img{
+            vertical-align: top;
+        }
+
+        .box1{
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .box2{
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .box3{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .box4{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .box5{
+            transform: rotateY(180deg) translateZ(100px);
+        }
+
+        .box6{
+            transform: rotateY(0deg) translateZ(100px);
+        }
+
+        @keyframes swap{
+            from{
+                transform:rotateX(0) rotateZ(0)
+            }
+
+            to{
+                transform:rotateX(1turn) rotateZ(1turn)
+            }
+        }
+
+        @keyframes a1{
+            0%{
+                transform: translateZ(0px) scale(1) rotateZ(0deg);
+            }
+            20%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg) ;
+            }
+            70%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg);
+            } 
+            80%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+            } 
+            100%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                border: 0.5 solid black;
+            }
+
+
+
+
+        }
+
+        @keyframes a2{
+             /*电脑太卡*/
+            0%{
+                transform: translateZ(0px) scale(1) rotateZ(0deg);
+            }
+            10%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg) ;
+            }
+            25%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg);
+            } 
+            30%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg);
+                height: 5px;
+                width: 5px;
+            } 
+            35%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg);
+                height: 5px;
+                width: 5px;
+            }
+            40%{
+                border: none;
+                box-shadow: 5px 5px 5px blue, -5px -5px 5px blue, 5px -5px 5px blue, -5px 5px 5px blue;
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                height: 3px;
+                width: 3px;
+            }
+
+            60%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                height: 25px;
+                width: 25px;
+            }
+
+            65%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                box-shadow: none;
+                height: 25px;
+                width: 25px;
+            }
+            100%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+        @keyframes a3{
+
+            /*直接卡死*/
+            0%{
+                transform: translateZ(0px) scale(1) rotateZ(0deg);
+            }
+            10%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg) ;
+            }
+            35%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg);
+            } 
+            40%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+            } 
+            50%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                border: 0.5 solid black;
+            }
+            55%{
+                transform: translateZ(0px) scale(1) rotateZ(0deg);
+            }
+            62.5%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg) ;
+            }
+            65%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg);
+            } 
+            67.5%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg);
+                height: 0px;
+                width: 0px;
+            } 
+            70%{
+                transform: translateZ(350px)  scale(0.3) rotateZ(720deg);
+                height: 5px;
+                width: 5px;
+            }
+            80%{
+                border: none;
+                box-shadow: 5px 5px 5px rgb(0, 132, 255), -5px -5px 5px rgb(0, 132, 255), 5px -5px 5px rgb(0, 132, 255), -5px 5px 5px rgb(0, 132, 255);
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                height: 5px;
+                width: 5px;
+            }
+
+            82.5%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                height: 25px;
+                width: 25px;
+            }
+
+            100%{
+                transform: translateZ(0px)  scale(1) rotateZ(0deg);
+                box-shadow: none;
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+        @keyframes bo {
+
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+            
+        }
+
+    </style>
+</head>
+    
+
+<body>
+    <div class="cube">
+        <!-- 引入图片-->
+        <div class="box1 b">
+            <!-- <img src="./结构 表现 样式/img/立方体图片/1.jpg" > -->
+
+        </div>
+        <div class="box2 b">
+            <!-- <img src="./结构 表现 样式/img/立方体图片/2.jpg" > -->
+        </div>
+        <div class="box3 b">
+            <!-- <img src="./结构 表现 样式/img/立方体图片/3.jpg" > -->
+
+        </div>
+        <div class="box4 b">
+            <!-- <img src="./结构 表现 样式/img/立方体图片/4.jpg" > -->
+
+        </div>
+        <div class="box5 b">
+            <!-- <img src="./结构 表现 样式/img/立方体图片/6.jpg" > -->
+
+        </div>
+        <div class="box6 b">
+            <!-- <img src="./结构 表现 样式/img/立方体图片/5.png" > -->
+
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript">
+        var arr = document.querySelectorAll(".b");
+
+        for(var n = 0 ; n < arr.length ; n++){
+
+            for(var r = 0 ; r < 8; r++){
+                
+                for(var c = 0 ; c < 8 ; c++){
+
+                    var divs = document.createElement("div");
+                    divs.style.cssText = "transform-style: preserve-3d; animation: a3 100s ease-in infinite "+ (0.1*r*c+2) +"s; position:absolute; width:25px; height:25px; border:0.5px solid black; box-sizing: boder-box; background-image:url(./结构表现样式/img/立方体图片/"+(n+15)+".jpg); background-position:center;background-size:200px 200px;";
+                    arr[n].appendChild(divs);
+
+                    divs.style.left = c*25+"px";
+                    divs.style.top = r*25+"px";
+
+                    divs.style.backgroundPositionX = -c*25 +"px";
+                    divs.style.backgroundPositionY = -r*25 +"px";
+
+                }
+            }
+        }
+    </script>
+</body>
+</html>

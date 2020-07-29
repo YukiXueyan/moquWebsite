@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>首页</title>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $(document).mousemove(function(event){ 
+    $("span").text("X: " + event.pageX + ", Y: " + event.pageY); 
+  });
+});
+</script>
+<style>
+    body{
+        background-color: #fbf1f0;
+    }
+    img{
+        height: 700px;
+        margin: auto;
+       }
+
+
+</style>
+</head>
+<body>
+
+    <div style="text-align: center;">
+    <img src="../image/index3.png" style="overflow:hidden;" usemap="#planetmap">   
+   
+
+    <map name="planetmap">
+        <area shape="rect" coords="0,33,200,113" alt="Sun" href="index.html">
+        <area shape="rect" coords="200,33,320,113" alt="Sun" href="chooseCourse.html">
+        <area shape="rect" coords="330,33,430,113" alt="Sun" href="ArtView.html">
+        <area shape="rect" coords="430,33,540,113" alt="Sun" href="information.html">
+        <area shape="rect" coords="830,33,920,113" alt="Sun" href="personalCenter.html">
+        <area shape="rect" coords="920,33,980,90" alt="Sun" href="login.html">
+        <area shape="rect" coords="50,144,230,450" alt="Sun" href="chooseCourse.html">
+        <area shape="rect" coords="850,290,960,320" alt="Sun" href="login.html">
+        <area shape="rect" coords="50,519,255,629" alt="Sun" href="chooseCourse.html">
+        <area shape="rect" coords="289,516,496,629" alt="Sun" href="chooseCourse.html">
+        <area shape="rect" coords="522,516,736,629" alt="Sun" href="chooseCourse.html">
+        <area shape="rect" coords="764,513,971,624" alt="Sun" href="chooseCourse.html">
+        
+ </map>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+body {
+    margin: 0;
+}
+#top1{
+    height: 100px;
+    background-color: #e62910;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #fbf1f0;
+    position:fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #ee8c83;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #ee8c83;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+    <div id="top0">
+        <ul class="menu">
+            <li><a href="index.html"><img src="../image/title.png" width="100" height="50"></a></li>
+            <li><a href="chooseCourse.html">选课中心</a></li>
+            <li><a href="ArtView.html">作品赏析</a></li>
+            <li><a href="information.html">展会信息</a></li>
+            <li><img src="../image/search2.png" width="230" height="60"></li>
+            <li><a href="personalCenter.html">    个人中心    </a></li>
+            <li><img src="../image/touxiang.png" width=50"></li>
+           
+        </ul>
+    </div>
+<div id="top1"></div>
+<ul>
+  <li><a class="active" href="#home">个人中心</a></li>
+  <li><div class="b0"><a href="#contact"><img src="../image/b1.png" style="margin:center" width="30" height="30">  首页</a></li>
+  <li><div class="b2"><a href="#contact"><img src="../image/b2.png" style="margin:center" width="30" height="30">  我的课程</a></li>
+  <li><div class="b3"><a href="#contact"><img src="../image/b3.png" style="margin:center" width="30" height="30">  我的收藏</a></li>
+  <li><div class="b4"><a href="#contact"><img src="../image/b4.png" style="margin:center" width="30" height="30">  历史记录</a></li>
+  <li><div class="b5"><a href="#contact"><img src="../image/b5.png" style="margin:center" width="30" height="30">  我的头像</a></li>
+  <li><div class="b6"><a href="#contact"><img src="../image/b6.png" style="margin:center" width="30" height="30">  账号安全</a></li>
+  <li><div class="b7"><a href="#contact"><img src="../image/b7.png" style="margin:center" width="30" height="30">  我的钱包</a></li>
+  <li><div class="b8"><a href="#contact"><img src="../image/b8.png" style="margin:center" width="30" height="30">  我的积分</a></li>
+  
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+
+</body>
+</html>

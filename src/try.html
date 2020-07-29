@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气</title>
+</head>
+<style>
+    .content{
+        width: 100%;
+        height: 600px;
+        background-image: url("one.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        align-items: flex-end;
+        color: white;
+        justify-content: space-around;
+    }
+    .one,.two,.four,.there,.five{
+        border:2px solid white;
+        margin-bottom: 5px;
+        width: 15%;
+        text-align: center;
+        font-size: 18px;
+        height: 90px;
+    }
+    .one1,.two1,.four1,.there1,.five1{
+        border:3px solid white;
+        margin: 0px auto;
+        margin-top: -30px;
+        width: 60px;
+        height: 60px;border-radius: 30px;
+    }
+
+    .one{
+        background-color: #9E9081;
+    }
+    .two{
+        background-color: #163F5B;
+    }
+    .there{
+        background-color: #519881;
+    }
+    .four{
+        background-color: #99BB45;
+    }
+    .five{
+        background-color:#FFBC04;
+    }
+    .one1{
+        background-image: url("../image/b1.png.jpg");
+    }
+    .two1{
+        background-image: url("../image/b2.png.jpg");
+
+    }
+    .there1{
+        background-image: url("../image/b3.png.jpg");
+
+      }
+    .four1{
+        background-image: url("../image/b4.png.jpg");
+
+        }
+    .five1{
+        background-image: url("../image/b5.png.jpg");
+
+          }
+
+    .down{
+        margin-top:25px ;
+    }
+</style>
+<script>
+    function a() {
+        var a=document.getElementById('content').style.backgroundImage='url("../image/b1.png.jpg")';
+
+    }
+    function b() {
+        var a=document.getElementById('content').style.backgroundImage='url("../image/b2.png.jpgg")';
+
+    }
+    function c() {
+        var a=document.getElementById('content').style.backgroundImage='url("../image/b3.png.jpg")';
+
+    }
+    function d() {
+        var a=document.getElementById('content').style.backgroundImage='url("../image/b4.png.jpg")';
+
+    }
+    function e() {
+        var a=document.getElementById('content').style.backgroundImage='url("../image/b5.png.jpg")';
+
+    }
+
+</script>
+<body>
+<div class="content" id="content">
+    <div class="one" onclick="a()">
+        <div class="one1"></div>
+        <div class="down" >周一狂躁综合症</div>
+    </div>
+    <div class="two"  onclick="b()">
+        <div class="two1"></div>
+        <div class="down">周二狂雷霆似雨浇</div>
+    </div>
+    <div class="there" onclick="c()">
+        <div class="there1"></div>
+        <div class="down">周三阴郁似乌云</div>
+    </div>
+    <div class="four" onclick="d()">
+        <div class="four1"></div>
+        <div class="down">周四冬日盼春来</div>
+    </div>
+    <div class="five" onclick="e()">
+        <div class="five1"></div>
+        <div class="down">周五守得艳阳天</div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

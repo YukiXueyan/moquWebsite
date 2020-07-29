@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:slateblue;
+transition:width 2s;
+margin-bottom: 10px;
+transition-property:width 1s linear 2s;
+<!--延时2s-->
+}
+
+.d1:hover
+{
+    width:700px;
+}
+
+.d2:hover
+{
+width:200px;
+height:200px;
+transform:rotate(180deg);
+
+}
+</style>
+</head>
+<body>
+
+<div class="d1">d1</div>
+<div class="d2">d2</div>
+<div class="d3">d3</div>
+<p>请把鼠标指针放到黄色的 div 元素上，来查看过渡效果。</p>
+
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+
+</body>
+</html>

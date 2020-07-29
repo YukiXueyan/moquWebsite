@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>个人中心</title> 
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.header {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.footer {
+    background-color: #fbf1f0;
+    color: white;
+    padding: 15px;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+.menu li {
+    list-style: none;
+    width: 200px;
+    display: inline-block;
+    background-color: white;
+}
+.menu li a {
+    text-decoration: none;
+    position: relative;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+    padding: 14px 30px;
+    text-transform: uppercase;
+}
+.menu li a:before {
+    content: '';
+    width: 200px;
+    position: absolute;
+    border-bottom: 8px solid #313131;
+    bottom: 0;
+    right: 350px;
+    transition: 0.7s all;
+}
+.menu li a:hover:before {
+    right: 0;
+}
+.menu li a:hover:not(.active) {
+    background-color: #ee8c83;
+    color: white;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.sidemenu {
+    width: 15%;
+}
+.content {
+    width: 75%;
+}
+.sidemenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidemenu li a {
+    margin-bottom: 4px;
+    display: block;
+    padding: 8px;
+    background-color: white;
+    text-decoration: none;
+    color: #666;
+}
+.sidemenu li a:hover {
+    background-color: #ee8c83;
+    color: white;
+}
+.sidemenu li a.active {
+    background-color: #ee8c83;
+    color: #eee;
+}
+#top2{
+    height: 30px;
+    float:top;
+    background-color: #fbf1f0;
+    padding-left: 7%;
+    font-size: 20px;
+}
+.photo{
+    width: 500;
+    margin: 5px;
+    padding: 0px,0px,0px,300px;
+    float: left;
+   
+}
+.word{
+    color: #313131;
+    border-bottom:pink solid 5px;
+    
+    
+}
+#geyan{
+    font-size: 20px;
+}
+#top3{
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+div.img {
+    margin: 5px;
+    
+    float: left;
+    width: 90px;
+    padding: 0px,500px,0px,50px;
+}
+
+div.img img {
+    
+    height: auto;
+    padding: 0px,50px,0px,50px;
+}
+
+div.desc {
+
+    text-align: center;
+    
+}
+
+#p0{
+
+    background-color: aquamarine;
+}
+#p1{
+    border-right: 1px solid #ccc;
+     width: 275px;
+    text-align: center;
+}
+#p2{
+    
+     width: 250px;
+    text-align: center;
+}
+.responsive{
+
+}
+</style>
+</head>
+<body>
+
+<ul class="menu">
+    <li><a href="index.html"><img src="../image/title.png" height="60"></a></li>
+    <li><a href="chooseCourse.html">选课中心</a></li>
+    <li><a href="ArtView.html">作品赏析</a></li>
+    <li><a href="information.html">展会信息</a></li>
+    <li><img src="../image/search2.png" width="230" height="60"></li>
+    <li><a href="personalCenter.html">    个人中心    </a></li>
+    <li><a href="login.html"><img src="../image/touxiang.png" width=50"></a></li>
+</ul>
+
+<div id="top2">
+    <a href="index.html">首页</a>><a href="/personalCenter.html">个人中心</a>
+</div>
+
+
+<div class="clearfix">
+  <div class="column sidemenu">
+    <ul>
+        <li><a class="active" href="#home">个人中心</a></li>
+        <li><div class="b0"><a href="#contact"><img src="../image/b1.png" style="margin:center" width="30" height="30">  首页</a></li>
+        <li onclick="myFunction()"><div class="b2"><a href="#contact"><img src="../image/b2.png" style="margin:center" width="30" height="30">  我的课程</a></li>
+        <li onclick="myFunction()"><div class="b3"><a href="#contact"><img src="../image/b3.png" style="margin:center" width="30" height="30">  我的收藏</a></li>
+        <li onclick="myFunction()"><div class="b4"><a href="#contact"><img src="../image/b4.png" style="margin:center" width="30" height="30">  历史记录</a></li>
+        <li onclick="myFunction()"><div class="b5"><a href="#contact"><img src="../image/b5.png" style="margin:center" width="30" height="30">  我的头像</a></li>
+        <li onclick="myFunction()"><div class="b6"><a href="#contact"><img src="../image/b6.png" style="margin:center" width="30" height="30">  账号安全</a></li>
+        <li onclick="myFunction()"><div class="b7"><a href="#contact"><img src="../image/b7.png" style="margin:center" width="30" height="30">  我的钱包</a></li>
+        <li onclick="myFunction()"><div class="b8"><a href="#contact"><img src="../image/b8.png" style="margin:center" width="30" height="30">  我的积分</a></li>
+       
+  </div>
+
+  <div class="column content">
+    <div class="header">
+        <div class="photo"><img src="../image/c1.png" width="100" ></div>
+        <div class="word" style="text-align: left;"><h1>youke001</h1>
+            <p id="geyan">满怀希望就会所向披靡 </p>      
+            </div>
+    </div>
+    
+    <div id="top3">
+        <p>每日任务</p>
+    </div>
+    
+    <div id="p0">
+        <div class="responsive">
+            <div class="img" id="p1">          
+                <img src="../image/c2.png" alt="图片文本描述" width="90" >
+              <div class="desc">每日任务</div>
+            </div>
+          </div>
+           
+          <div class="responsive">
+            <div class="img" id="p1">
+                <img src="../image/c3.png" alt="图片文本描述" width="90">
+              <div class="desc">每日观看视频</div>
+            </div>
+          </div>
+           
+          <div class="responsive">
+            <div class="img" id="p1">
+                <img src="../image/c4.png" alt="图片文本描述" width="90">
+              <div class="desc">每日课程</div>
+            </div>
+          </div>
+           
+          <div class="responsive">
+            <div class="img" id="p2">
+                <img src="../image/c2.png" alt="图片文本描述" width="90">
+              <div class="desc">每日分享</div>
+            </div>
+          </div>
+
+        
+          
+    </div>
+
+<script>
+    function myFunction(){
+    alert("相关功能开发中，敬请期待");
+}
+
+</script>
+</body>
+
+</html>

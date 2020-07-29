@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#d1 {
+width:100px;
+height:100px;
+background:skyblue;
+animation:myfirst 5s;
+margin: 5px;
+-moz-animation:myfirst 5s; /* Firefox */
+-webkit-animation:myfirst 5s; /* Safari and Chrome */
+-o-animation:myfirst 5s; /* Opera */
+}
+
+@keyframes myfirst
+{
+from {background:skyblue;}
+to {background:slateblue;}
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="d1"></div>
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+
+</body>
+</html>
